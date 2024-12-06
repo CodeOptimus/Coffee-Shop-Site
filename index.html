@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@11.0.4/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -13,7 +18,7 @@
   <body>
     <!-- header begins here -->
     <header class="header">
-      <!-- <div id="menu-btn" class="fa-solid fa-bars"></div> -->
+      <div id="menu-btn" class="fa-solid fa-bars"></div>
       <a href="#" class="logo">Coffee <i class="fa-solid fa-mug-hot"></i></a>
       <nav class="navbar">
         <a href="#home">Home</a>
@@ -80,6 +85,7 @@
     </section>
     <!-- about section ends here -->
 
+    
     <!-- menu section begins here -->
     <section class="menu" id="menu">
       <h1 class="heading">Our Menu <span>Popular Menu</span></h1>
@@ -233,18 +239,20 @@
             <span>Happy Client</span>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- review section ends here -->
+
 
 
     <!-- booking section begins here -->
     <section class="book">
       <h1 class="heading">book <span>now</span></h1>
       <form action="">
-        <input type="text" placeholder="Name" class="box" />
-        <input type="email" placeholder="Email" class="box" />
-        <input type="number" placeholder="Contact" class="box" />
+        <input type="text" placeholder="Name" class="box" required/>
+        <input type="email" placeholder="Email" class="box" required/>
+        <input type="tel" placeholder="Contact" class="box" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
         <textarea
           name=""
           placeholder="Enter your message"
@@ -257,7 +265,8 @@
     </section>
     <!-- booking section ends here -->
 
-    
+
+
     <!-- footer begins here -->
     <section class="footer">
       <div class="footer-container">
@@ -265,5 +274,8 @@
       </div>
     </section>
     <!-- footer begins here -->
+
+    <script src="https://unpkg.com/swiper@11.0.4/swiper-bundle.min.js"></script>
+    <script src="./JS/script.js"></script>
   </body>
 </html>
