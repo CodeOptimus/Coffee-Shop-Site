@@ -20,6 +20,7 @@
   font-family: "Oxygen", sans-serif;
   text-transform: capitalize;
   transition: all 0.2s linear;
+  overflow-x: hidden;
 }
 
 html {
@@ -507,3 +508,152 @@ section {
     font-size: 1rem;
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .header #menu-btn {
+        display: block;
+      }
+    
+      .navbar {
+        display: flex; 
+        flex-direction: column;
+        gap: 2rem;
+        position: absolute;
+        top: 100%;
+        left: -100%; 
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px);
+        width: 50%;
+        height: 50vh;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        text-align: left;
+        transition: left 0.3s ease;
+        z-index: 1000;
+      }
+    
+      .navbar.active {
+        left: 0; 
+      }
+    
+      .navbar a {
+        display: block;
+        margin: 1rem 0;
+        font-size: 2rem;
+      }
+    
+      .heading {
+        font-size: 3rem;
+      }
+    
+      .heading span {
+        font-size: 2rem;
+      }
+    
+      .home .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .home .row .content {
+        width: 30rem;
+        padding-top: 5rem;
+      }
+    
+      .home .row .content h3 {
+        font-size: 3rem;
+      }
+    
+      .home .image-slider {
+        text-align: center;
+        padding: 2rem 0;
+        padding-top: 10rem;
+      }
+    
+      .home .image-slider img {
+        margin-top: 2rem;
+        height: 5rem;
+      }
+    
+      .about .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .about .row .content {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 0;
+      }
+    
+      .about .row .content .title {
+        font-size: 2rem;
+        line-height: 1.8;
+      }
+    
+      .about .row .content p {
+        font-size: 1.2rem;
+      }
+    
+      .about .row .content .icons-container {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .menu .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* gap: 4rem; */
+      }
+    
+      .menu .box-container .box {
+        margin-left: 0;
+        align-items: center;
+        flex: 0;
+      }
+    
+      .menu .box-container .box .content {
+        padding-left: 0;
+      }
+    
+      .menu .box-container .box .content h3 {
+        font-size: 2rem;
+      }
+    
+      .menu .box-container .box .content p {
+        font-size: 1rem;
+      }
+    
+      .menu .box-container .box .content .price {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    
+      .review {
+        padding-top: 2rem;
+      }
+    
+      .review .review-slider {
+        padding: 5rem 0;
+      }
+    
+      .book form {
+        width: 100%;
+      }
+    
+      .book form input {
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+      }
+    
+      .footer {
+        font-size: 1rem;
+      }
+}
+
+
